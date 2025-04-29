@@ -50,11 +50,27 @@ echo "[INFO] GitLab Airgap Bundle Import Process Completed."
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Replace
-git checkout "$branch" || git checkout -b "$branch" "origin/$branch"
-git pull origin "$branch"
-
-with
-git fetch origin
-git checkout "$branch" || git checkout -b "$branch" "origin/$branch"
-git reset --hard "origin/$branch"
+fatal: Refusing to fetch into current branch refs/heads/main of non-bare repository
+[ERROR] Failed to fetch from bundle gm-tma__tenants__gmz__omd__swa__swa_firmware__fw-vendors__quartus__main. Skipping.
+[INFO] Processing bundle: gm-tma__tenants__gmz__omd__swa__swa_firmware__fw-vendors__vivado-l7h0x__main
+Initialized empty Git repository in /home/coder/transfer-phase2/imported_gitlab_repos/gm-tma__tenants__gmz__omd__swa__swa_firmware__fw-vendors__vivado-l7h0x__main/.git/
+fatal: Refusing to fetch into current branch refs/heads/main of non-bare repository
+[ERROR] Failed to fetch from bundle gm-tma__tenants__gmz__omd__swa__swa_firmware__fw-vendors__vivado-l7h0x__main. Skipping.
+[INFO] Processing bundle: gm-tma__tenants__gmz__omd__swa__swa_firmware__questa_job_mgr__main
+Initialized empty Git repository in /home/coder/transfer-phase2/imported_gitlab_repos/gm-tma__tenants__gmz__omd__swa__swa_firmware__questa_job_mgr__main/.git/
+fatal: Refusing to fetch into current branch refs/heads/main of non-bare repository
+[ERROR] Failed to fetch from bundle gm-tma__tenants__gmz__omd__swa__swa_firmware__questa_job_mgr__main. Skipping.
+[INFO] Processing bundle: gm-tma__tenants__gmz__omd__swa__swa-software__ace-test__main
+Initialized empty Git repository in /home/coder/transfer-phase2/imported_gitlab_repos/gm-tma__tenants__gmz__omd__swa__swa-software__ace-test__main/.git/
+fatal: Refusing to fetch into current branch refs/heads/main of non-bare repository
+[ERROR] Failed to fetch from bundle gm-tma__tenants__gmz__omd__swa__swa-software__ace-test__main. Skipping.
+[INFO] Processing bundle: gm-tma__tenants__gmz__omd__tma__tma-issue-project__main
+Initialized empty Git repository in /home/coder/transfer-phase2/imported_gitlab_repos/gm-tma__tenants__gmz__omd__tma__tma-issue-project__main/.git/
+fatal: Refusing to fetch into current branch refs/heads/main of non-bare repository
+[ERROR] Failed to fetch from bundle gm-tma__tenants__gmz__omd__tma__tma-issue-project__main. Skipping.
+[INFO] Processing bundle: gm-tma__transfer-script-test-group__transfer-script-test-group__main
+Initialized empty Git repository in /home/coder/transfer-phase2/imported_gitlab_repos/gm-tma__transfer-script-test-group__transfer-script-test-group__main/.git/
+fatal: Refusing to fetch into current branch refs/heads/main of non-bare repository
+[ERROR] Failed to fetch from bundle gm-tma__transfer-script-test-group__transfer-script-test-group__main. Skipping.
+[INFO] GitLab Airgap Bundle Import Process Completed.
+coder@rudy:~/transfer-phase2$ 
